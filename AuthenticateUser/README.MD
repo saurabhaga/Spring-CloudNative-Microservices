@@ -32,3 +32,13 @@ _Note:_ token validation can be enhanced but for tutorial purpose, validation fo
  
 **Sample Response** 
 
+Success 
+![success](images/success.png)
+
+Failure 
+![failure](images/failure.png)
+
+**Database Table**
+
+![table](images/table.png)
+
