@@ -1,0 +1,3 @@
+rootProject.name = 'microservice-tutorial'
+include 'AuthenticateUser'
+
