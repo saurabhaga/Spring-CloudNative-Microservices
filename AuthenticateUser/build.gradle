@@ -27,6 +27,7 @@ test {
 	useJUnitPlatform()
 }
 
+bootJar.archiveFileName="app.jar"
 task stage {
     dependsOn build
 }
