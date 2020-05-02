@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar AuthenticateUser/build/libs/app.jar
+web: java $JAVA_OPTS -jar ConfigServer/build/libs/app.jar
