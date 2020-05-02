@@ -1,0 +1,25 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: Config-Server
+  
+   
+  cloud:
+    config:
+      # git repo location 
+      uri: https://github.com/saurabhaga/microservice-tutorial.git
+      
+      # use develop branch 
+      label: develop
+      server:
+        git:
+          # if any error it will throw on server start else on first request
+          clone-on-start: true
+          # This is required if your files under folder. In my case it is not in root of git repo.
+          search-paths: config-files
+          skip-ssl-validation: true
+    
+    
+    # this is a public git repo so no credential required
