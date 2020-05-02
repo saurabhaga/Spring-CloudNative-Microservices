@@ -1,4 +1,4 @@
-package com.tutorial.hospital.user.api.controller;
+package com.tutorial.authenticate.user.api.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,10 +9,10 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tutorial.hospital.user.api.entity.Login;
-import com.tutorial.hospital.user.api.entity.LoginResponse;
-import com.tutorial.hospital.user.api.jpa.repositories.LoginRepository;
-import com.tutorial.hospital.user.api.util.TokenUtil;
+import com.tutorial.authenticate.user.api.entity.Login;
+import com.tutorial.authenticate.user.api.entity.LoginResponse;
+import com.tutorial.authenticate.user.api.jpa.repositories.LoginRepository;
+import com.tutorial.authenticate.user.api.util.TokenUtil;
 
 @RestController
 public class AuthController {

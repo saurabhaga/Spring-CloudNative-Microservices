@@ -1,4 +1,4 @@
-package com.tutorial.hospital.user.api;
+package com.tutorial.authenticate.user.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

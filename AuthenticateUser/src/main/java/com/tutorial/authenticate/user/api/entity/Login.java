@@ -1,4 +1,4 @@
-package com.tutorial.hospital.user.api.entity;
+package com.tutorial.authenticate.user.api.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

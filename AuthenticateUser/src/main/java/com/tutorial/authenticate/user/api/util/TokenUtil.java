@@ -1,4 +1,4 @@
-package com.tutorial.hospital.user.api.util;
+package com.tutorial.authenticate.user.api.util;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
