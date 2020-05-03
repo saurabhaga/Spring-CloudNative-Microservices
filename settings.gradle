@@ -1,4 +1,6 @@
 rootProject.name = 'microservice-tutorial'
 include 'AuthenticateUser'
 include 'ConfigServer'
+include 'DiscoveryService'
+
 
