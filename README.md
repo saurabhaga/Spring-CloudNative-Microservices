@@ -1,7 +1,7 @@
 # Microservice Tutorial
 
 **Objective:** Objective of this repository is to develop a set of API(s) using Spring Boot to demonstrate several features. The services will be cloud native service.
-This project is developed during the tough time of COVID19 where I thought it will be very helpful for students and young professional to learn OR seek new jobs. 
+This project is developed during the tough time of COVID19 where I thought it will be very helpful for students and young professional to learn microservices develoment using Spring Boot. 
 
 **Overview** 
 Set of cloud native API(s) has  been created considering simplest use case of hospital.  Total of 6 API(s) are developed.
