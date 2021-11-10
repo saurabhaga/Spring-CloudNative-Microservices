@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: eureka-server
+  # config server details
+  config:
+    import: 
+    - "optional:configserver:${CLOUD_CONFIG_SERVER_URL:http://localhost:8088}"
+  
+server:
+  port: 8761
+  
+management:
+  endpoint:
+    refresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh  
+
+
+# Eureka server is also a Eureka client so it tries to connect and register itself.OR in production there will be multiple eureka servers so we need not to set below properties but in development ,we have only one sever
+# Add below properties to disable the registry for the Eureka server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka
+
+# Add below property to disable the self preservation mode (should be use carefully, will remove instance from registry )
+  server:
+    enable-self-preservation: false
