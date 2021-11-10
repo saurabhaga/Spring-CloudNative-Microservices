@@ -1,6 +1,6 @@
 # default server port
 server:
-  port: ${SERVER:PORT:0}
+  port: ${PORT:0}
 
 # default active profile
 spring:
