@@ -12,7 +12,9 @@ This is a sample implementation of Cloud Config Server. Config Server will read 
 ## In case config server to be registered with Eureka,
 - Pass "REGISTER_TO_EUREKA" environment variable as "true"
 - Pass Eureka Server url in "EUREKA_SERVER_URL"
-    
+
+## Artifacts
+For Quick test, jar file and docker file is available in "deploy" directory.
 
 ## References :
 [Official Documentation](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
