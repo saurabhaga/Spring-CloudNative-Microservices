@@ -11,4 +11,4 @@ eureka:
 
 # Add below property to disable the self preservation mode (should be use carefully, will remove instance from registry )
   server:
-    enable-self-preservation: true
+    enable-self-preservation: false
