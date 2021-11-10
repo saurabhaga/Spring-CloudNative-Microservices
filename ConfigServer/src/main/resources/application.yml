@@ -1,0 +1,33 @@
+server:
+  port: ${PORT:8088}
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CONFIG_GIT_URI:https://github.com/saurabhaga/spring-cloud-microservices}
+          clone-on-start: true
+          # git repo credentials . uncomment below if git repo is private.
+          #username: ${CONFIG_GIT_USERNAME:saurabhaga}
+          #password: ${CONFIG_GIT_PASSWORD:*******}
+          # skip ssl verification
+          skip-ssl-validation: true
+          # This is required if your files under folder. In this example, it is not at root of git repo so add the folder name in search path.
+          search-paths: ${CONFIG_SEARCH_PATH:config-files}
+          #specify the default branch (more generally, Git label) that a config server uses if a client does not specify the label
+          default-label: ${CONFIG_DEFAULT_LABEL:develop}
+
+
+# below properties to register config server in eureka. This is disabled. See md files for more details why
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+    enabled: ${REGISTER_TO_EUREKA:false} #can be enabled/disabled.
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${random.value}
+    
+
