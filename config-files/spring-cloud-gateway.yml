@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+# auto config refresh enabled. to achieve this write a custom scheduler which will trigger /actuator/refresh end point 
+client:
+  config:
+    auto-refresh:
+      enabled: true
+      delay: 30
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: test-service
+        uri: lb://test
+        predicates:
+        - Path=/v1/**
+      
+
+
+    
