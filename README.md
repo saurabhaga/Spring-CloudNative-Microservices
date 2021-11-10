@@ -1,6 +1,15 @@
 # Microservice Tutorial
 
-**Objective:** Objective of this repository is to develop a set of API(s) using Spring Boot to demonstrate several features. The services will be cloud native service.
+**Objective:** Objective of this repository is to develop cloud native microservices using Spring Boot to demonstrate all the aspects of microservices. Microservice architecture patterns like cloud config , service discovery, api gateway etc will be covered here.
+
+**Technology Stack**
+- Spring Boot 2.5.6
+- Java 8 
+- Cloud config Server (backed by git repo)
+- Eureka server (service discovery)
+- Spring Cloud Gateway (API Gateway)
+- Maven (Dependency Management) 
+
 This project is developed during the tough time of COVID19 where I thought it will be very helpful for students and young professional to learn microservices develoment using Spring Boot. 
 
 **Overview** 
