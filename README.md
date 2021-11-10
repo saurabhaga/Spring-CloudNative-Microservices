@@ -9,10 +9,11 @@
 - Eureka server (service discovery)
 - Spring Cloud Gateway (API Gateway)
 - Maven (Dependency Management) 
+- Spring tool Suite (IDE, you can chose any of your choice)
 
-This project is developed during the tough time of COVID19 where I thought it will be very helpful for students and young professional to learn microservices develoment using Spring Boot. 
+This project is developed with the intention to help students, developers and young professionals understand the concept practically in the simplest way. 
 
-**Overview** 
+**Project Overview** 
 Set of cloud native API(s) has  been created considering simplest use case of hospital.  Total of 6 API(s) are developed.
 
 **Database Design**
