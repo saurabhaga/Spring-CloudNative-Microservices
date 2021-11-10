@@ -1,4 +1,4 @@
-# default server port
+# default server port. kept variable name as PORT as heroku by default provides this variable with random values
 server:
   port: ${PORT:0}
 
