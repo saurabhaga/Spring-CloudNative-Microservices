@@ -1,15 +1,20 @@
-# Getting Started
+# Spring Eureka Server 
 
-### Reference Documentation
-For further reference, please consider the following sections:
+This is a sample implementation of Eureka Server and is registered as cloud config client i.e. it reads its properties from git repo.
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.5.6/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.5.6/maven-plugin/reference/html/#build-image)
-* [Eureka Server](https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#spring-cloud-eureka-server)
+## Default values and Environment variables 
+- Default server port is "8761". Can be customized using "PORT" environment variable.
+- Default Cloud config server is http://localhost:8088 but can be changed by "CLOUD_CONFIG_SERVER_URL" environment variable
 
-### Guides
-The following guides illustrate how to use some features concretely:
+As such there will be no real time config updates required so whenever any config are updated, run /actuator/refresh end point to refresh the configurations.
 
-* [Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
+## Artifacts
+For Quick test, jar file and docker file is available in "deploy" directory.
+
+## References :
+[Tutorial](https://saurabhaga.github.io/tutorials/pages/sb-config-server.html)
+
+[Eureka Server](https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#spring-cloud-eureka-server)
+
+[Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
 
