@@ -1,7 +1,3 @@
-# default server port. kept variable name as PORT as heroku by default provides this variable with random values
-server:
-  port: ${PORT:0}
-
 # default active profile
 spring:
   profiles:
