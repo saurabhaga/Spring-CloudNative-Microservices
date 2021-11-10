@@ -16,4 +16,5 @@ This is a sample implementation of Cloud Config Server. Config Server will read 
 
 ## References :
 [Official Documentation](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
+
 [Tutorial](https://saurabhaga.github.io/tutorials/pages/sb-config-server.html)
