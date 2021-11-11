@@ -15,6 +15,10 @@ spring:
         uri: lb://test
         predicates:
         - Path=/v2/**
+      - id: authentication-service
+        uri: lb//authentication
+        predicates:
+        - Path=/user/**
       
 
 
