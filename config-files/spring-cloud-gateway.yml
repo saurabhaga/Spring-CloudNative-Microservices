@@ -14,7 +14,7 @@ spring:
       - id: test-service
         uri: lb://test
         predicates:
-        - Path=/v2/**
+        - Path=/v1/**
       - id: authentication-service
         uri: lb://authentication
         predicates:
