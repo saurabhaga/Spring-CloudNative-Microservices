@@ -1,0 +1,9 @@
+spring:
+   # On local run, pass variables while start. On heroku deployment, heorku automatically sets these variables 
+   # based on the db we mapped in app . Get all these details from heroku ui 
+
+  datasource:
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:password}
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://mysql:3306/User-Management}
+    driver-class-name: com.mysql.jdbc.Driver
