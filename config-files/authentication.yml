@@ -7,3 +7,7 @@ spring:
     password: ${SPRING_DATASOURCE_PASSWORD:password}
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://mysql:3306/UserManagement}
     driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
