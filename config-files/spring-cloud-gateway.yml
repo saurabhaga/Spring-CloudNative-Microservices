@@ -6,7 +6,7 @@ client:
   config:
     auto-refresh:
       enabled: true
-      #delay: 900 # 15 mins 
+      delay: 900 # 15 mins 
 spring:
   cloud:
     gateway:
