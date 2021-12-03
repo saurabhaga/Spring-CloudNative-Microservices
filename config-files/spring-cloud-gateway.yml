@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 # auto config refresh enabled. to achieve this write a custom scheduler which will trigger /actuator/refresh end point 
 client:
