@@ -5,13 +5,13 @@ spring:
     - dev 
 
 # default service discovery
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
-    enabled: ${REGISTER_TO_EUREKA:true}
-  instance:
-    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${random.value}
+#eureka:
+  #client:
+    #serviceUrl:
+      #defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+    #enabled: ${REGISTER_TO_EUREKA:true}
+  #instance:
+    #instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${random.value}
  
 #refresh client config at runtime and interval in seconds. custom property
 client:
